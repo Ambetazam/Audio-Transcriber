@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+audio/
+
+# Local Whisper models
+models/
+
+# Audio recordings
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.opus
+
+# Generated transcripts / outputs
+transcripts/
+output/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

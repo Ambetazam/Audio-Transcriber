@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-transcriber"
+version = "0.1.0"
+description = "A local Whisper-based CLI for transcribing audio into evidence-friendly text and Markdown."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Jean Castaneda"}
+]
+dependencies = [
+    "faster-whisper>=1.2.0,<2.0.0"
+]
+
+[project.scripts]
+audio-transcriber = "audio_transcriber.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
